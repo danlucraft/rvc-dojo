@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "oh hai"
+require './lib/rvc'
+
+RVC.log('./.rvc')
