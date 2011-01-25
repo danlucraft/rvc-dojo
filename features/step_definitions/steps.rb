@@ -1,5 +1,5 @@
-When /^I run rvc show$/ do
-  @output = `./bin/rvc-show`
+When /^I run rvc log$/ do
+  @output = `./bin/rvc-log`
   raise "ouch" unless $? == 0
 end
 

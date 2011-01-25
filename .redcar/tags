@@ -1,0 +1,24 @@
+1295986717
+Commit	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	  class Commit
+RVC	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	class RVC
+RVC	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	class RVC
+RVCObject	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	class RVCObject
+Repo	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	  class Repo
+StorageAdapter	/Users/danlucraft/projects/rvc-dojo/lib/storage_adapter.rb	class StorageAdapter
+author	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	    def author
+contents	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	  def contents
+contents_other_stuff	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	  def contents_other_stuff
+contents_type	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	  def contents_type
+find	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	    def find(object_hash)
+find	/Users/danlucraft/projects/rvc-dojo/lib/storage_adapter.rb	  def find(object_hash)
+head_commit	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	    def head_commit
+initialize	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	    def initialize(repo, serialized)
+initialize	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	    def initialize(dir)
+initialize	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	  def initialize(object_hash)
+initialize	/Users/danlucraft/projects/rvc-dojo/lib/storage_adapter.rb	  def initialize(repo)
+log	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	    def log
+log	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	  def self.log(dir)
+message	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	    def message
+object_hash	/Users/danlucraft/projects/rvc-dojo/lib/rvc_object.rb	  attr_reader :object_hash
+parent	/Users/danlucraft/projects/rvc-dojo/lib/commit.rb	    def parent
+path	/Users/danlucraft/projects/rvc-dojo/lib/rvc.rb	    def path

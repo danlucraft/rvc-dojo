@@ -1,6 +1,7 @@
 class StorageAdapter
-  def initialize(path)
-    @path = path
+  def initialize(repo)
+    @repo = repo
+    @path = repo.path
   end
   
   def find(object_hash)
@@ -10,7 +11,7 @@ class StorageAdapter
     type = parts.shift
     rest = parts * ':'
     case type
-    when 'c' then RVC::Commit.new(rest)
+    when 'c' then RVC::Commit.new(@repo, rest)
     end
   end
 end

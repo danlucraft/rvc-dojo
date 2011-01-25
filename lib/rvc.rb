@@ -10,7 +10,15 @@ class RVC
   class Repo
     def initialize(dir)
       @dir = File.expand_path(dir)
-      @storage = StorageAdapter.new(@dir)
+      @storage = StorageAdapter.new(self)
+    end
+    
+    def path
+      @dir
+    end
+    
+    def find(object_hash)
+      @storage.find(object_hash)
     end
     
     def head_commit
@@ -19,11 +27,10 @@ class RVC
     end
     
     def log
-      p head_commit
-      return
-      $bbqhead = RVCObject.new(File.read(@head))
-      puts "Object type is: #{$bbqhead.contents_type}"
-      puts "Other stuff is: #{$bbqhead.contents_other_stuff.inspect}"
+      [head_commit, head_commit.parent].each do |commit|
+        puts "Message: #{commit.message}"
+        puts "Author: #{commit.author}"
+      end
     end
   end
 end
