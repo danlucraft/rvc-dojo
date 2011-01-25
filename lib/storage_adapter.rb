@@ -12,6 +12,8 @@ class StorageAdapter
     rest = parts * ':'
     case type
     when 'c' then RVC::Commit.new(@repo, rest)
+    when 't' then RVC::Tree.new(@repo, rest)
+    when 'b' then RVC::Blob.new(@repo, rest)
     end
   end
 end

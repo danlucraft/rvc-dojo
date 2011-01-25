@@ -16,5 +16,9 @@ class RVC
     def parent
       @repo.find(@tuple[0]) rescue nil
     end
+    
+    def tree
+      @repo.find(@tuple[1])
+    end
   end
 end
