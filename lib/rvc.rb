@@ -21,16 +21,23 @@ class RVC
       @storage.find(object_hash)
     end
     
+    def all
+      
+    end
+    
     def head_commit
       sha = File.read(@dir + '/HEAD')
       @storage.find(sha)
     end
     
     def log
-      [head_commit, head_commit.parent].each do |commit|
-        puts "Message: #{commit.message}"
-        puts "Author: #{commit.author}"
-      end
+      show_commit(head_commit)  
+    end
+    
+    def show_commit(commit)
+      puts "Message: #{commit.message}"
+      puts "Author: #{commit.author}"
+      show_commit(commit.parent) unless not commit.parent.is_a? Commit
     end
   end
 end
