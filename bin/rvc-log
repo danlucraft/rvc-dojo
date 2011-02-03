@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby
-
-require './lib/rvc'
-RVC::Repo.new('./.rvc').log
