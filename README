@@ -1,3 +1,7 @@
 
 
-See http://danlucraft.com/blog/2011/01/coding-dojo-version-control-system/ for a description of this dojo problem.
+(See http://danlucraft.com/blog/2011/01/coding-dojo-version-control-system/ for a description of this dojo problem.)
+
+This repository contains 3 branches, which have distinct content: master, dojo-solution and original-rvc
+
+This branch (master) contains only the .rvc repository. This is a version control repository similar in format to Git. Solving the dojo means extracting the information from the .rvc repository.
