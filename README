@@ -1,0 +1,6 @@
+
+(See http://danlucraft.com/blog/2011/01/coding-dojo-version-control-system/ for a description of this problem)
+
+This branch contains the original RVC program I wrote to create the .rvc repository that is in the master branch.
+
+That repository contains the history of commits of this project. (This .git repository only contains 3 branches with the problem and solutions.)
